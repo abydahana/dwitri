@@ -13,6 +13,12 @@ DWITRI is a Social Networking Script based by Codeigniter (PHP) to build your ow
 It's has been build using Codeigniter in HMVC concept, so you can easily doing update and knowing well the script source.
 
 # INSTALLING
+Please note that your server should meet requirements below:
+1. MYSQLi is required,
+2. mod_rewrite should be loaded (required),
+3. GD Library should be loaded,
+4. JSON extension should be loaded
+
 Download repository, extract on your destination folder, access 'install' folder through browser (for example: http://localhost/dwitri/install). Follow the instructions until setup is finished.
 
 # DEFAULT SUPERADMIN LOGIN
