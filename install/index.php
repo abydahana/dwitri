@@ -9,9 +9,9 @@
 	{
 		require_once('includes/Core_class.php');
 		require_once('includes/Database_class.php');
-		$core		= new Core();
-		$database	= new Database();
-		$error		= false;
+		$core			= new Core();
+		$database		= new Database();
+		$error			= false;
 		if($core->validate_post($_POST) == true)
 		{
 			if($database->create_database($_POST) == false)
