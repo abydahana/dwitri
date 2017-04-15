@@ -9,7 +9,11 @@ DWITRI is a Social Networking Script based by Codeigniter (PHP) to build your ow
 7. Following, Friendship System,
 8. Multi Language,
 9. Pages Management.
+
 It's has been build using Codeigniter in HMVC concept, so you can easily doing update and knowing well the script source.
 
 # INSTALLING
 Download repository, extract on your destination folder, access through browser. You should redirected to install page. Follow the instructions until setup is complete.
+
+# DONATION
+You may want buy me a coffee, please send a little pitty to my Paypal: abydahana[at]gmail.com
