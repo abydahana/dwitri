@@ -1,0 +1,48 @@
+Options All -Indexes
+<IfModule pagespeed_module>
+	ModPagespeed off
+</IfModule>
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	RewriteCond %{REQUEST_URI}::$1 ^(.*?/)(.*)::\2$
+	RewriteRule ^(.*)$ - [E=BASE:%1]
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteRule .* index.php/$0 [PT,L]
+	
+	# Uncomment this parameter below to force WWW
+	# RewriteCond %{HTTP_HOST} !^www\.
+	# RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+</IfModule>
+ 
+<IfModule !mod_rewrite.c>
+	ErrorDocument 404 /404.php
+</IfModule>
+
+<FilesMatch ".(ttf|otf|eot|woff)$">
+	<IfModule mod_headers.c>
+		Header set Access-Control-Allow-Origin "*" 
+	</IfModule>
+</FilesMatch>
+
+<IfModule mod_deflate.c>
+	SetOutputFilter DEFLATE
+	SetEnvIfNoCase Request_URI \
+	\.(?:gif|jpe?g|png)$ no-gzip dont-vary
+</IfModule>
+
+<IfModule mod_expires.c>
+	ExpiresActive on
+	ExpiresByType image/jpg "access 2 month"
+	ExpiresByType image/gif "access 2 month"
+	ExpiresByType image/jpeg "access 2 month"
+	ExpiresByType image/png "access 2 month"
+	ExpiresByType text/css "access plus 20 minutes"
+	ExpiresByType application/x-javascript "access plus 20 minutes"
+	ExpiresByType text/javascript "access plus 20 minutes"
+	ExpiresByType application/javascript "access plus 20 minutes"
+	ExpiresByType image/x-icon "access plus 20 minutes"
+	ExpiresByType image/icon "access plus 20 minutes"
+	ExpiresByType application/x-ico "access plus 20 minutes"
+	ExpiresByType application/ico "access plus 20 minutes"
+</IfModule>
