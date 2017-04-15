@@ -15,5 +15,9 @@ It's has been build using Codeigniter in HMVC concept, so you can easily doing u
 # INSTALLING
 Download repository, extract on your destination folder, access through browser. You should redirected to install page. Follow the instructions until setup is complete.
 
+# DEFAULT SUPERADMIN LOGIN
+Username: admin
+Password: admin
+
 # DONATION
 You may want buy me a coffee, please send a little pitty to my Paypal: abydahana[at]gmail.com
