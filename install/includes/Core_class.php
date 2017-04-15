@@ -8,9 +8,6 @@ class Core
 
 	function write_config($data)
 	{
-		ini_set('max_execution_time', 0);
-		ini_set('memory_limit', '20000M');
-		
 		$hostname		= (isset($data['hostname']) ? $data['hostname'] : null);
 		$username		= (isset($data['username']) ? $data['username'] : null);
 		$password		= (isset($data['password']) ? $data['password'] : null);

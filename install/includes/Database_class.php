@@ -19,6 +19,9 @@ class Database
 	
 	function create_tables($data)
 	{
+		ini_set('max_execution_time', 0);
+		ini_set('memory_limit', '20000M');
+		
 		$mysqli = new mysqli($data['hostname'], $data['username'], $data['password'], $data['database']);
 		
 		if(mysqli_connect_errno())
