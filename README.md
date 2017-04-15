@@ -22,7 +22,7 @@ Username: admin
 Password: admin
 
 # DONATION
-You may want buy me a coffee, please send a little pitty to my Paypal: abydahana[at]gmail.com
+You may would buy me a cup of coffee, please send a little pitty to my Paypal: abydahana[at]gmail.com
 
 # FEW SCREENSHOTS
 Added from user @marvelhoax
