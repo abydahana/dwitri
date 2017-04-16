@@ -1,16 +1,19 @@
-# DWITRI
-DWITRI is a Social Networking Script based by Codeigniter (PHP) to build your own community. You can build awesome website by this script. There is some modules included on it:
-1. Timeline and Wall System,
+# ABOUT
+DWITRI is a Social Networking Script based by Codeigniter (PHP) to build your own community site. With this script you can build awesome website. There is some modules included on it:
+1. Timeline and Wall System (Facebook wall similar),
 2. Blog Posts (Reportage News),
-3. Snapshots,
+3. Snapshots (9GAG similar),
 4. Open Letters,
-5. Online TV,
+5. Online TV (awesome feature),
 6. Users Management,
 7. Following, Friendship System,
-8. Multi Language,
-9. Pages Management.
+8. Multi Language (this awesome feature with phrases translation, please give me a credit for it),
+9. Pages Management,
+10. Undescriptable features may available.
 
 It's has been build using Codeigniter in HMVC concept, so you can easily doing update and knowing well the script source.
+
+> I am done right now and maybe will back as soon as i have free times. You may would to contribute. Please create your own modules following the existing module inside. No special documentation here, just use your feeling :)
 
 # INSTALLING
 Please note that your server should meet requirements below:
@@ -28,7 +31,7 @@ Username: admin
 Password: admin
 
 # DONATION
-You may would buy me a cup of coffee, please send a little pitty to my Paypal: abydahana[at]gmail.com
+You may would buy me a cup of coffee, please send a little pitty to my Paypal: **abydahana[at]gmail.com**
 
 # FEW SCREENSHOTS
 Added from user @marvelhoax
