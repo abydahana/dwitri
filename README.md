@@ -22,7 +22,7 @@ Please note that your server should meet requirements below:
 3. GD Library should be loaded,
 4. JSON extension should be loaded
 
-Download repository, extract on your destination folder, access 'install' folder through browser (for example: http://localhost/dwitri/install). Follow the instructions until setup is finished.
+Download repository, extract on your destination folder, access through your browser, in first access you should redirected to installation page. Follow the instructions until setup is completed.
 
 # DEFAULT SUPERADMIN LOGIN
 
