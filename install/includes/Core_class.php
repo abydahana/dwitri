@@ -12,8 +12,8 @@ class Core
 		$username		= (isset($data['username']) ? $data['username'] : null);
 		$password		= (isset($data['password']) ? $data['password'] : null);
 		$database		= (isset($data['database']) ? $data['database'] : null);
-		$template_path	= 'config/database.php';
-		$output_path	= '../codeigniter/application/config/database.php';
+		$template_path	= 'config/config.php';
+		$output_path	= '../config.php';
 		$database_file	= file_get_contents($template_path);
 
 		$new			= str_replace("%HOSTNAME%", $hostname, $database_file);

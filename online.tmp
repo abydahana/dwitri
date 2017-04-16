@@ -1,1 +1,1 @@
-a:3:{s:11:"guestonline";i:1;s:10:"totalvisit";i:60;s:10:"useronline";a:1:{s:9:"127.0.0.1";a:4:{s:4:"time";i:1470007468;s:3:"uri";s:11:"/installer/";s:8:"username";N;s:3:"bot";b:0;}}}
+a:4:{s:11:"guestonline";i:0;s:10:"totalvisit";i:70;s:10:"useronline";a:1:{s:3:"::1";a:4:{s:4:"time";i:1492337889;s:3:"uri";s:19:"/dwitri/user/alerts";s:8:"username";s:5:"admin";s:3:"bot";b:0;}}s:9:"memonline";i:1;}

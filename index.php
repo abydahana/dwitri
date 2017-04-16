@@ -1,5 +1,11 @@
 <?php
-date_default_timezone_set('Asia/Jakarta');
+	if (!file_exists('config.php'))
+	{
+		header('Location:install');
+	}
+	include('config.php');
+	date_default_timezone_set('Asia/Jakarta');
+	define('SALT', '@AbyDahana is Awesome!');
 /**
  * CodeIgniter
  *
@@ -7,7 +13,7 @@ date_default_timezone_set('Asia/Jakarta');
  *
  * This content is released under the MIT License (MIT)
  *
- * Copyright (c) 2014 - 2015, British Columbia Institute of Technology
+ * Copyright (c) 2014 - 2016, British Columbia Institute of Technology
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -29,10 +35,10 @@ date_default_timezone_set('Asia/Jakarta');
  *
  * @package	CodeIgniter
  * @author	EllisLab Dev Team
- * @copyright	Copyright (c) 2008 - 2014, EllisLab, Inc. (http://ellislab.com/)
- * @copyright	Copyright (c) 2014 - 2015, British Columbia Institute of Technology (http://bcit.ca/)
+ * @copyright	Copyright (c) 2008 - 2014, EllisLab, Inc. (https://ellislab.com/)
+ * @copyright	Copyright (c) 2014 - 2016, British Columbia Institute of Technology (http://bcit.ca/)
  * @license	http://opensource.org/licenses/MIT	MIT License
- * @link	http://codeigniter.com
+ * @link	https://codeigniter.com
  * @since	Version 1.0.0
  * @filesource
  */
@@ -54,7 +60,7 @@ date_default_timezone_set('Asia/Jakarta');
  *
  * NOTE: If you change these, also change the error_reporting() code below
  */
-	define('ENVIRONMENT', isset($_SERVER['CI_ENV']) ? $_SERVER['CI_ENV'] : 'production');
+	define('ENVIRONMENT', isset($_SERVER['CI_ENV']) ? $_SERVER['CI_ENV'] : 'development');
 
 /*
  *---------------------------------------------------------------
@@ -64,10 +70,6 @@ date_default_timezone_set('Asia/Jakarta');
  * Different environments will require different levels of error reporting.
  * By default development will show errors but testing and live will hide them.
  */
- 
- 
-define ('SALT', '@AbyDahana is Awesome!');
-
 switch (ENVIRONMENT)
 {
 	case 'development':
@@ -114,7 +116,7 @@ switch (ENVIRONMENT)
  * folder than the default one you can set its name here. The folder
  * can also be renamed or relocated anywhere on your server. If
  * you do, use a full server path. For more info please see the user guide:
- * http://codeigniter.com/user_guide/general/managing_apps.html
+ * https://codeigniter.com/user_guide/general/managing_apps.html
  *
  * NO TRAILING SLASH!
  */
