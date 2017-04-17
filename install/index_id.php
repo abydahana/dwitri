@@ -95,7 +95,7 @@
 								<center>
 									<h2>Halo...</h2>
 									<p>
-										Perkenalkan, saya <b>Aby Dahana</b>. Pada halaman ini saya akan memperkenalkan fitur-fitur, modul dan helper yang ada pada script ini serta petunjuk untuk memulai instalasi. Silakan luangkan waktu sejenak untuk mendapatkan pemahaman tentang <i class="text-primary">System Requirements</i> untuk mencegah terjadinya kesalahan yang menyebabkan website tidak bekerja dengan baik.
+										Perkenalkan, saya <b>Aby Dahana</b>. Selamat datang di halaman instalasi DWITRI. Silakan luangkan waktu sejenak untuk mendapatkan pemahaman tentang <i class="text-primary">System Requirements</i> untuk mencegah terjadinya kesalahan yang menyebabkan website tidak bekerja dengan baik.
 									</p>
 								</center>
 								<br /><br />

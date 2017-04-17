@@ -95,7 +95,7 @@
 								<center>
 									<h2>Hello...</h2>
 									<p>
-										It's me, <b>Aby Dahana</b>. I will introduce the basic features, modules and helpers included in this package and installation instructions. Please take a moment to knowing the <i class="text-primary">System Requirements</i> to prevent errors and website doesn't work as well.
+										It's me, <b>Aby Dahana</b>. Welcome to DWITRI Standalone Installer. Please take a moment to knowing the <i class="text-primary">System Requirements</i> to prevent errors and website doesn't work as well.
 									</p>
 								</center>
 								<br /><br />
