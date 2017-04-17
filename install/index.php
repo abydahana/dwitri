@@ -175,7 +175,7 @@
 												</h2>
 											</div>
 											<blockquote>
-												You have been success installing DWITRI. &nbsp; &nbsp; The website with sample data has been successfully congigured.
+												You have been successfully installing DWITRI. The website with sample data has been successfully configured.
 											</blockquote>
 											<br />
 											<p>

@@ -179,7 +179,7 @@
 												</h2>
 											</div>
 											<blockquote>
-												Anda baru saja menyelesaikan proses instalasi. &nbsp; &nbsp; Website dengan beberapa sample data kini telah selesai dipersiapkan.
+												Anda baru saja menyelesaikan proses instalasi. Website dengan beberapa sample data kini telah selesai dipersiapkan.
 											</blockquote>
 											<br />
 											<p>
