@@ -18,7 +18,7 @@ It's has been build using Codeigniter in HMVC concept, so you can easily doing u
 # INSTALLING
 Please note that your server should meet requirements below:
 1. MYSQLi is required,
-2. mod_rewrite should be loaded (required),
+2. mod_rewrite should be enabled (required),
 3. GD Library should be loaded,
 4. JSON extension should be loaded
 
