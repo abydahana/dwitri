@@ -5,7 +5,8 @@ class Onlinetracker{
 	public $data;
 	public $ip;
 	
-	function Onlinetracker(){
+	public function __construct()
+	{
 		$this->ip = $_SERVER['REMOTE_ADDR'];
 		$this->data = @unserialize(file_get_contents($this->file));
 		$aryData = $this->data['useronline'];
@@ -62,27 +63,32 @@ class Onlinetracker{
 	}
 	
 	//this function return the total number of online users
-	function users(){
+	function users()
+	{
 		return count($this->data['useronline']);
 	}
 
 	//this function return the total number of online members
-	function members(){
+	function members()
+	{
 		return @$this->data['memonline'];
 	}
 	
 	//this function return the total number of online guest
-	function guests(){
+	function guests()
+	{
 		return @$this->data['guestonline'];
 	}
 	
 	//this function return the total number of total visit
-	function visits() {
+	function visits()
+	{
 		return @$this->data['totalvisit'];
 	}
 	
 	//this function return the total number of online robots
-	function robots(){
+	function robots()
+	{
 		$i=0;
 		foreach($this->data as $value)
 		{
@@ -92,7 +98,8 @@ class Onlinetracker{
 	}
 	
 	//Used to set custom data
-	function set_data($data=false, $force_update=false){
+	function set_data($data=false, $force_update=false)
+	{
 		if(!is_array($data)){ return false;}
 
 		$tmp=false; //Used to control if there are changes
@@ -111,12 +118,14 @@ class Onlinetracker{
 		return $this->_save();
 	}
 	//
-	function get_info(){
+	function get_info()
+	{
 		return @$this->data;
 	}	
 	
 	//Save current data into file
-	function _save() {
+	function _save()
+	{
 		$fp = fopen($this->file,'w');
 		flock($fp, LOCK_EX);
 		$write = fwrite($fp, serialize($this->data));
