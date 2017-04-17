@@ -1,6 +1,12 @@
 <?php
 	session_start();
+	require_once('includes/Core_class.php');
+	require_once('includes/Database_class.php');
+	$core					= new Core();
+	$database				= new Database();
 	$installed				= false;
+	$extensions				= get_loaded_extensions();
+	$mod_rewrite			= $core->is_mod_rewrite_enabled();
 	$db_config				= '../config.php';
 	$base_url				= (empty($_SERVER['HTTPS']) OR strtolower($_SERVER['HTTPS']) === 'off') ? 'http' : 'https';
 	$base_url				.= '://'. $_SERVER['HTTP_HOST'];
@@ -10,12 +16,9 @@
 	{
 		$installed			= true;
 	}
+	
 	if(isset($_POST['hash']))
 	{
-		require_once('includes/Core_class.php');
-		require_once('includes/Database_class.php');
-		$core				= new Core();
-		$database			= new Database();
 		$error				= false;
 		if($core->validate_post($_POST) == true)
 		{
@@ -99,10 +102,6 @@
 									</p>
 								</center>
 								<br /><br />
-								<?php
-									$extensions	= get_loaded_extensions();
-									$modules	= apache_get_modules();
-								?>
 								<div class="row">
 									<div class="col-sm-10 col-sm-offset-1">
 										<table class="table table-striped">
@@ -154,7 +153,7 @@
 														Rewrite Module
 													</td>
 													<td>
-														<?php echo (in_array('mod_rewrite', $modules) ? '<b class="text-success"><i class="fa fa-check"></i> Enabled</b>' : '<b class="text-danger"><i class="fa fa-times"></i> Disabled</b>'); ?>
+														<?php echo ($mod_rewrite ? '<b class="text-success"><i class="fa fa-check"></i> Enabled</b>' : '<b class="text-danger"><i class="fa fa-times"></i> Disabled</b>'); ?>
 													</td>
 												</tr>
 											</tbody>
