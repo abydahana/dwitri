@@ -41,4 +41,16 @@ class Core
 			return false;
 		}
 	}
+	
+	function is_mod_rewrite_enabled()
+	{
+		if((isset($_SERVER['HTTP_MOD_REWRITE']) && $_SERVER['HTTP_MOD_REWRITE'] == 'On') || (function_exists('apache_get_modules') && in_array('mod_rewrite', apache_get_modules())))
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
 }
