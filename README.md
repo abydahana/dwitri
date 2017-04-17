@@ -7,7 +7,7 @@ DWITRI is a Social Networking Script based by Codeigniter (PHP) to build your ow
 5. Online TV (awesome feature),
 6. Users Management,
 7. Following, Friendship System,
-8. Multi Language (this awesome feature with phrases translation, please give me a credit for it),
+8. **Multi Language (this awesome feature with phrases translation, please give me a credit for it)**,
 9. Pages Management,
 10. Undescriptable features may available.
 
