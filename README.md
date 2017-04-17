@@ -1,5 +1,5 @@
 # ABOUT
-DWITRI is a Social Networking Script based by Codeigniter (PHP) to build your own community site. With this script you can build awesome website. There is some modules included on it:
+DWITRI is a Social Networking Script based by Codeigniter (PHP) to build your own community site. By using this script you can build awesome website. There is some modules included on it:
 1. Timeline and Wall System (Facebook wall similar),
 2. Blog Posts (Reportage News),
 3. Snapshots (9GAG similar),
