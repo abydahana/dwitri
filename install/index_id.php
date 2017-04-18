@@ -232,7 +232,7 @@
 											</blockquote>
 										</div>
 									</div>
-									<form class="submitForm form-horizontal" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>" data-save="Instal" data-saving="Mempersiapkan..." data-alert="Tidak dapat melakukan instalasi. Silakan coba lagi">
+									<form class="submitForm form-horizontal" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>" data-save="Instal" data-saving="Mempersiapkan..." data-alert="Tidak dapat melakukan instalasi. Silakan coba lagi" data-icon="check">
 										<div class="form-group">
 											<label class="control-label col-sm-4">Database Hostname</label>
 											<div class="col-sm-7">

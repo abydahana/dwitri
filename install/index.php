@@ -228,7 +228,7 @@
 											</blockquote>
 										</div>
 									</div>
-									<form class="submitForm form-horizontal" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>" data-save="Instal" data-saving="Mempersiapkan..." data-alert="Unable to install script, please try again.">
+									<form class="submitForm form-horizontal" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>" data-save="Instal" data-saving="Installing..." data-alert="Unable to install script, please try again." data-icon="check">
 										<div class="form-group">
 											<label class="control-label col-sm-4">Database Hostname</label>
 											<div class="col-sm-7">

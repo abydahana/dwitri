@@ -1,12 +1,12 @@
 <?php
 class Core
 {
-	function validate_post($data)
+	public function validate_post($data)
 	{
 		return !empty($data['hostname']) && !empty($data['username']) && !empty($data['database']);
 	}
 
-	function write_config($data)
+	public function write_config($data)
 	{
 		$hostname		= (isset($data['hostname']) ? $data['hostname'] : null);
 		$username		= (isset($data['username']) ? $data['username'] : null);
@@ -23,7 +23,7 @@ class Core
 
 		$handle			= fopen($output_path, 'w+');
 
-		@chmod($output_path, 0777);
+		chmod($output_path, 0777);
 
 		if(is_writable($output_path))
 		{
@@ -42,9 +42,9 @@ class Core
 		}
 	}
 	
-	function is_mod_rewrite_enabled()
+	public function is_mod_rewrite_enabled()
 	{
-		if((isset($_SERVER['HTTP_MOD_REWRITE']) && $_SERVER['HTTP_MOD_REWRITE'] == 'On') || (function_exists('apache_get_modules') && in_array('mod_rewrite', apache_get_modules())))
+		if((isset($_SERVER['HTTP_MOD_REWRITE']) && strtolower($_SERVER['HTTP_MOD_REWRITE']) == 'on') || (function_exists('apache_get_modules') && in_array('mod_rewrite', apache_get_modules())))
 		{
 			return true;
 		}

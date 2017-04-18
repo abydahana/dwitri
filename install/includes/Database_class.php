@@ -1,9 +1,10 @@
 <?php
+error_reporting(0);
 class Database
 {
-	function create_database($data)
+	public function create_database($data)
 	{
-		$mysqli = @new mysqli($data['hostname'], $data['username'], $data['password'], '');
+		$mysqli = new mysqli($data['hostname'], $data['username'], $data['password'], '');
 		
 		if(mysqli_connect_errno())
 		{
@@ -17,7 +18,7 @@ class Database
 		}
 	}
 	
-	function create_tables($data)
+	public function create_tables($data)
 	{
 		ini_set('max_execution_time', 0);
 		ini_set('memory_limit', '20000M');
