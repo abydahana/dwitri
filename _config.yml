@@ -1,0 +1,8 @@
+title: easCI CMS
+description: A Content Management System Based by Codeigniter
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-architect
+
+gems:
+  - jekyll-mentions
