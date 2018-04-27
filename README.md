@@ -31,7 +31,7 @@ Username: admin
 Password: admin
 
 # DONATION
-You may would buy me a cup of coffee, please send a little pitty to my Paypal: **abydahana[at]gmail.com**
+You may would buy me a cup of coffee, please send a little pitty to my Paypal: **abydahana[at]gmail.com** or [paypal.me/abydahana](https://paypal.me/abydahana)
 
 # FEW SCREENSHOTS
 Added by user **@marvelhoax**
